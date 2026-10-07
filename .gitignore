@@ -1,0 +1,199 @@
+# ==============================================================================
+# Visual Studio 项目通用 .gitignore 配置
+# 适用：.NET Framework/.NET Core/.NET 5+ / C#/C++ / Xamarin/MonoDevelop 项目
+# 遵循 Git 规范：https://git-scm.com/docs/gitignore
+# ==============================================================================
+
+# ================================= 1. 本地用户配置文件 ============================
+# Visual Studio 本地个性化配置（窗口布局、断点、用户设置等，无需共享）
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# MonoDevelop/Xamarin Studio 本地用户偏好设置
+*.userprefs
+
+# ================================= 2. 编译产物与可执行文件 ========================
+# 可执行文件（跨平台编译产物）
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# 编译输出目录（Debug/Release 构建结果，大小写兼容 Windows/Linux）
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Bb]in/
+[Oo]bj/
+
+# 平台特定编译目录（ARM/x64/x86 架构）
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+x64/
+x86/
+
+# 中间编译产物（C#/C++ 目标文件、调试符号、静态库等）
+*.obj
+*.iobj
+*.pdb
+*.ipdb
+*.lib
+*.exp
+*.ilk
+*.meta
+*.pch
+*.rsp
+*.sbr
+
+# ================================= 3. Visual Studio 缓存与临时文件 ================
+# Visual Studio 解决方案缓存目录（含智能感知、调试配置等）
+.vs/
+
+# C++ 智能感知缓存目录（提升 IDE 性能，本地生成即可）
+ipch/
+
+# Visual C++ 项目缓存文件
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# 项目临时文件（构建过程中生成的临时文件）
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.scc
+
+# ================================= 4. 测试与构建日志 ==============================
+# MSTest/NUnit 测试结果目录及报告
+[Tt]est[Rr]esult*/
+*.VisualState.xml
+TestResult.xml
+
+# 构建日志文件（编译过程的输出记录，本地查看即可）
+[Bb]uild[Ll]og.*
+*.log
+*.svclog
+
+# Visual Studio 性能分析器文件（性能测试结果）
+*.psess
+*.vsp
+*.vspx
+
+# ================================= 5. 第三方工具/插件缓存 =========================
+# ReSharper 代码分析工具缓存（团队可能使用不同版本，无需共享）
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JustCode 代码分析工具缓存
+.JustCode
+
+# TeamCity CI 工具配置
+_TeamCity*
+
+# DotCover 代码覆盖率工具文件
+*.dotCover
+
+# NCrunch 测试工具缓存
+_NCrunch_*
+.*crunch*.local.xml
+
+# AutoTest.Net 自动化测试工具目录
+AutoTest.Net/
+
+# ================================= 6. 部署与发布相关 ==============================
+# Web 项目发布配置（可能包含本地路径/密钥，建议忽略）
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+
+# 发布输出目录（Web 项目/应用的部署包）
+publish/
+ClientBin/
+
+# Windows Azure 云服务构建产物
+csx/
+*.build.csdef
+
+# Windows Store 应用包目录
+AppPackages/
+
+# ================================= 7. 依赖管理与包文件 ============================
+# NuGet 包文件（本地还原即可，无需提交仓库）
+*.nupkg
+*.sap
+
+# 【过时配置】早期 NuGet packages 目录（现代 .NET 用 PackageReference，可删除）
+# */packages/*
+# !**/packages/build/
+
+# ================================= 8. 数据库与生成代码 ============================
+# SQL Server 本地数据库文件（大文件，避免提交仓库）
+*.mdf
+*.ldf
+
+# SSRS/SSAS 报表设计文件（本地数据源配置，无需共享）
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+
+# 自动生成的代码目录（工具生成的代码，由源码触发生成）
+Generated_Code/
+orleans.codegen.cs
+
+# Fakes 框架程序集（单元测试的假对象程序集）
+FakesAssemblies/
+
+# ================================= 9. 杂项与敏感文件 ==============================
+# Node.js 依赖目录（若项目混合前端开发，依赖由 package.json 管理）
+node_modules/
+
+# SASS/SCSS 编译缓存
+.sass-cache/
+
+# Visual Studio Express 版本配置
+[Ee]xpress/
+
+# 临时文件（编辑器自动生成的备份文件）
+~$*
+*~
+
+# 数据库模型设计文件（本地可视化配置）
+*.dbmdl
+*.dbproj.schemaview
+
+# 【安全提醒】证书/密钥文件（包含敏感信息，严禁提交仓库）
+*.pfx
+*.publishsettings
+
+# Visual Studio 分析工具数据文件
+.ntvs_analysis.dat
+
+# 其他临时文件
+*.plg
+*.opt
+bin.zip
+*.gpState
+$tf/
+
+# Python 运行缓存
+__pycache__/
